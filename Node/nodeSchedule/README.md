@@ -65,8 +65,8 @@
 
 >参考资料
 
-* [参考资料1](https://github.com/node-schedule/node-schedule)
-* [参考资料2](http://www.cnblogs.com/zhongweiv/p/node_schedule.html#node_cha)
+* [参考资料1:https://github.com/node-schedule/node-schedule](https://github.com/node-schedule/node-schedule)
+* [参考资料2:http://www.cnblogs.com/zhongweiv](http://www.cnblogs.com/zhongweiv/p/node_schedule.html#node_cha)
         
         
     
