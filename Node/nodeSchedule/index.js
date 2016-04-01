@@ -40,5 +40,42 @@ var schedule = require('node-schedule');
 //     log("已经取消了")
 // },3000);
 
+//
+// //情况四,使用递归写法,描述范围
+//
+// var rule = new schedule.RecurrenceRule();
+//
+// // rule.second =[0,new schedule.Range(2,58)];
+//
+// rule.second = [13,55,0,new schedule.Range(20,30)];
+// function RecurrenceRang (rule){
+//     var job = schedule.scheduleJob(rule, function () {
+//         log('测试范围: '+new Date());
+//     })
+// }
+//
+// RecurrenceRang(rule);
+
+//情况五,如何用文本表示法,来控制范围
+
+// var date = {
+//     // second : [10,13,55,44]
+//     second:[13,55,0,new schedule.Range(20,30)],
+//     minute:[22,55]
+// };
+
+var date = '*/3 * * * * *';
+
+function ObjectLiteralSyntax(rule) {
+    schedule.scheduleJob(rule, function () {
+        log('字面量的范围');
+    })
+}
+
+ObjectLiteralSyntax(date);
+
+
+
+
 
 
